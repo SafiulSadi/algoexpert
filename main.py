@@ -144,23 +144,53 @@
 #
 #
 # 53 A. Brain's Photos
+#
+# n, m = map(int, input().split())
+# arr = []
+# sett = set()
+# while n > 0:
+#     arr = list(map(str, input().split()))
+#     # print(arr)
+#     for i in arr:
+#         sett.add(i)
+#     n -= 1
+# # print(arr)
+# # print(sett)
+# flag = "#Black&White"
+# for i in sett:
+#     if i == "C" or i == "M" or i == "Y":
+#         flag = "#Color"
+#         break
+# print(flag)
 
-n, m = map(int, input().split())
-arr = []
-sett = set()
-while n > 0:
-    arr = list(map(str, input().split()))
-    # print(arr)
-    for i in arr:
-        sett.add(i)
-    n -= 1
-# print(arr)
-# print(sett)
-flag = "#Black&White"
-for i in sett:
-    if i == "C" or i == "M" or i == "Y":
-        flag = "#Color"
-        break
-print(flag)
+# 53 A. Hulk
+
+n = int(input())
+x = ""
+for i in range(1, n):
+    if i % 2 == 0:
+        x += "I love that "
+    else:
+        x += "I hate that "
+if n % 2 == 0:
+    x += "I love it"
+else:
+    x += "I hate it"
+print(x)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
